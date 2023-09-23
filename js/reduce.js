@@ -14,6 +14,8 @@ if (!isNaN(numerator) && !isNaN(denominator)) {
       const wholePart = Math.floor(numerator / denominator);
       const fractionalPart = numerator % denominator;
       console.log(`Fraction: ${wholePart} + ${fractionalPart}/${denominator}`);
+    } else if (numerator === denominator) {
+      console.log(`Fraction: 1`);
     } else {
       while (denominator1 !== numerator1) {
         if (denominator1 > numerator1) {
